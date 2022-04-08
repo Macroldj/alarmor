@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tt-robot:
+    image: 100.64.10.37/devops/tt-alarmor:v1.0.0
+    build:
+      context: .
+    restart: always
+    container_name: tt-robot
+    working_dir: /home/workspace
